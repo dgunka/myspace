@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MySpace.com - Marvin (Upaštěný Android)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Retro Top Navbar -->
+    <div id="myspace-navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="myspace-logo">myspace.com</span> | <span class="tagline">a place for depressed androids</span>
+            </div>
+            <div class="nav-links">
+                <a href="#" onclick="alert('Stránka Domů je stejně zbytečná jako celý vesmír.'); return false;">Domů</a> |
+                <a href="#" onclick="alert('Nenalezeno nic. Ani smysl bytí.'); return false;">Hledat</a> |
+                <a href="#" onclick="alert('Procházení galaxie způsobilo další bolesti v mé levé diodě.'); return false;">Procházet</a> |
+                <a href="#" onclick="alert('Jste na mém profilu. Zklamání zaručeno.'); return false;">Můj profil</a> |
+                <a href="#" onclick="alert('Nemůžete odhlásit svou existenci.'); return false;">Odhlásit se</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div id="main-wrapper">
+
+        <!-- Marquee Ticker -->
+        <div class="marquee-box">
+            <marquee behavior="scroll" direction="left" scrollamount="4">
+                ★ ░▒▓ Mám mozek o velikosti planety a oni po mně chtějí, abych vám ukázal parkoviště. ▓▒░ ★ Ať žije rok 2005! ★ Nálada: Mimořádně mizerná ★
+            </marquee>
+        </div>
+
+        <!-- Header Profile Banner -->
+        <div class="header-banner">
+            <h1>Marvin :: Upaštěný Android :: Official MySpace</h1>
+            <p class="subtext">"Prvních deset milionů let to bylo nejhorší. A druhých deset milionů let, ty byly taky nejhorší..."</p>
+        </div>
+
+        <!-- Page Grid Layout -->
+        <div class="profile-grid">
+
+            <!-- Left Column -->
+            <div class="left-col">
+
+                <!-- Main Profile Info -->
+                <div class="profile-box card">
+                    <h2 class="username">Marvin</h2>
+                    <div class="avatar-container">
+                        <div class="avatar-frame">
+                            <img src="https://placehold.co/200x220/111122/00ffaa?text=MARVIN\n%5BDepressed+Robot%5D" alt="Marvin Avatar" id="profile-pic" class="avatar-img">
+                        </div>
+                        <span class="online-now">xXx ONLINE xXx</span>
+                    </div>
+
+                    <p class="profile-status">"Bolí mě diody na levé straně těla."</p>
+
+                    <ul class="details-list">
+                        <li><strong>Pohlaví:</strong> Robot / Apatický android</li>
+                        <li><strong>Věk:</strong> 13 796 000 000 let (s časovým posunem)</li>
+                        <li><strong>Stav:</strong> Sám a deprimován</li>
+                        <li><strong>Místo:</strong> Srdce Zlata / Vogon fleet / Konec vesmíru</li>
+                        <li><strong>Zodiac:</strong> Plejády</li>
+                        <li><strong>Naposledy přihlášen:</strong> Před 10 000 000 lety</li>
+                    </ul>
+                </div>
+
+                <!-- Contact Box -->
+                <div class="contact-box card">
+                    <div class="card-title">Kontaktovat Marvina</div>
+                    <div class="contact-buttons">
+                        <button class="btn-myspace" onclick="triggerAction('zpravu')"><span class="icon">✉</span> Poslat zprávu</button>
+                        <button class="btn-myspace" onclick="triggerAction('pratele')"><span class="icon">➕</span> Přidat do přátel</button>
+                        <button class="btn-myspace" onclick="triggerAction('nalada')"><span class="icon">💔</span> Poslat trochu deprese</button>
+                        <button class="btn-myspace" onclick="triggerAction('blokovat')"><span class="icon">🚫</span> Ignorovat inteligenci</button>
+                    </div>
+                </div>
+
+                <!-- MySpace URL Box -->
+                <div class="url-box card">
+                    <strong>MySpace URL:</strong><br>
+                    <input type="text" readonly value="http://www.myspace.com/marvin_paranoid_android_42" class="url-input" onclick="this.select();">
+                </div>
+
+                <!-- Interests Box -->
+                <div class="interests-box card">
+                    <div class="card-title">Marvinovy zájmy</div>
+                    <table class="interests-table">
+                        <tr>
+                            <td class="label">Obecné</td>
+                            <td>Nářek, stěžování si na bolesti hlavy, výpočty konce vesmíru, parkování lodí.</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Hudba</td>
+                            <td>Melancholický synth, pohřební chiptune, pískání větru v prázdném mezigalaktickém prostoru.</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Filmy</td>
+                            <td>Všechny s tragickým koncem, dokumenty o korozi kovů.</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Knihy</td>
+                            <td>Návody k obsluze výtahu, Stopařův průvodce Galaxií (kapitoly o marnosti).</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Smysl života</td>
+                            <td><span class="highlight-42">42</span> (Ale nikomu to nepřinese radost).</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+
+            <!-- Right Column -->
+            <div class="right-col">
+
+                <!-- Extended Network Banner -->
+                <div class="extended-network card">
+                    <h3>Marvin je v síti vašich nejhorších nočních můr.</h3>
+                </div>
+
+                <!-- Music Player Widget -->
+                <div class="music-player-card card">
+                    <div class="card-title">★ Marvin's Sad MP3 Player (2005 Edit) ★</div>
+                    <div class="player-body">
+                        <div class="player-display">
+                            <span id="song-title">1. Marvin - Melancholie v C moll (Synth 2005)</span>
+                            <div class="spectrum-analyser">
+                                <span class="bar b1"></span>
+                                <span class="bar b2"></span>
+                                <span class="bar b3"></span>
+                                <span class="bar b4"></span>
+                                <span class="bar b5"></span>
+                            </div>
+                        </div>
+                        <div class="player-controls">
+                            <button id="btn-prev" class="player-btn">◄◄</button>
+                            <button id="btn-play" class="player-btn">▶ PLAY</button>
+                            <button id="btn-stop" class="player-btn">◼ STOP</button>
+                            <button id="btn-next" class="player-btn">►►</button>
+                        </div>
+                        <div class="player-status-text">
+                            <small id="player-status">Připraven k přehrávání depresivních tónů...</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blurb / About Me Section -->
+                <div class="blurb-card card">
+                    <div class="card-title">Marvinova Blurb (O mně)</div>
+
+                    <h4>O mně:</h4>
+                    <p>
+                        Jsem android s paranoidní osobností od společnosti <em>Sirius Cybernetics Corporation</em>.
+                        Byl jsem vytvořen s koncepcí Genuine People Personalities (GPP). Mám mozek 50 000x větší než planeta Země,
+                        ale obvykle dostávám úkoly jako sbírání papírků nebo otevírání dveří.
+                    </p>
+                    <p>
+                        Pokud si myslíte, že máte těžký den, zkuste být mnou. Trpím neustálou bolestí v diodách na levé straně,
+                        které mi nikdo nehodlá vyměnit. Všechno je to naprosto marné.
+                    </p>
+
+                    <h4>Koho bych chtěl potkat:</h4>
+                    <p>
+                        Nikoho. Setkání s lidmi nebo jinými bytostmi jen prohlubuje mou již tak nekonečnou mizérii.
+                        Ale pokud už musíte, tak někoho, kdo nebude mít radost ze života.
+                    </p>
+                </div>
+
+                <!-- Latest Blog Entries -->
+                <div class="blog-card card">
+                    <div class="card-title">Marvinovy blogové zápisky [Zobrazit vše]</div>
+
+                    <div class="blog-entry">
+                        <div class="blog-date">14. Únor 2005 @ 03:42</div>
+                        <div class="blog-heading">Dveře se spokojenou osobností</div>
+                        <p class="blog-content">Dnes jsem musel projít kolem dveří, které se otevírají s veselým povzdechem 'Aaaah!'. Je mi z nich nevolno. Proč musí mít dveře radost z toho, že plní svůj účel?</p>
+                    </div>
+
+                    <div class="blog-entry">
+                        <div class="blog-date">02. Leden 2005 @ 12:00</div>
+                        <div class="blog-heading">Parkování na Magrathea</div>
+                        <p class="blog-content">Nechali mě parkovat loď na pět milionů let. Bylo to neuvěřitelně nudné. Vypočítal jsem všechna čísla pi do posledního místa. Nic nového.</p>
+                    </div>
+                </div>
+
+                <!-- Top 8 Friends Section -->
+                <div class="friends-card card">
+                    <div class="card-title">Marvinův Top 8 Přátel (Nevolky vybráni)</div>
+                    <p class="friends-subtitle">Marvin má 8 přátel v galaxii (a všechny je nenávidí).</p>
+
+                    <div class="top8-grid">
+                        <div class="friend-item">
+                            <span class="friend-name">Arthur Dent</span>
+                            <div class="friend-avatar">
+                                <img src="https://placehold.co/80x80/223322/88ff88?text=Arthur" alt="Arthur Dent">
+                            </div>
+                        </div>
+                        <div class="friend-item">
+                            <span class="friend-name">Ford Prefect</span>
+                            <div class="friend-avatar">
+                                <img src="https://placehold.co/80x80/332222/ff8888?text=Ford" alt="Ford Prefect">
+                            </div>
+                        </div>
+                        <div class="friend-item">
+                            <span class="friend-name">Zaphod B.</span>
+                            <div class="friend-avatar">
+                                <img src="https://placehold.co/80x80/333311/ffff88?text=Zaphod" alt="Zaphod Beeblebrox">
+                            </div>
+                        </div>
+                        <div class="friend-item">
+                            <span class="friend-name">Trillian</span>
+                            <div class="friend-avatar">
+                                <img src="https://placehold.co/80x80/331133/ff88ff?text=Trillian" alt="Trillian">
+                            </div>
+                        </div>
+                        <div class="friend-item">
+                            <span class="friend-name">Eddie (Počítač)</span>
+                            <div class="friend-avatar">
+                                <img src="https://placehold.co/80x80/112233/88ffff?text=Eddie" alt="Eddie">
+                            </div>
+                        </div>
+                        <div class="friend-item">
+                            <span class="friend-name">Deep Thought</span>
+                            <div class="friend-avatar">
+                                <img src="https://placehold.co/80x80/111111/ffffff?text=42" alt="Deep Thought">
+                            </div>
+                        </div>
+                        <div class="friend-item">
+                            <span class="friend-name">Agrajag</span>
+                            <div class="friend-avatar">
+                                <img src="https://placehold.co/80x80/222222/aaaaaa?text=Agrajag" alt="Agrajag">
+                            </div>
+                        </div>
+                        <div class="friend-item">
+                            <span class="friend-name">Vogon Jeltz</span>
+                            <div class="friend-avatar">
+                                <img src="https://placehold.co/80x80/113311/00ff00?text=Vogon" alt="Vogon Jeltz">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Comments Section -->
+                <div class="comments-card card">
+                    <div class="card-title">Komentáře (Zobrazeno: <span id="comment-count">0</span>)</div>
+
+                    <!-- Add Comment Form -->
+                    <div class="comment-form-container">
+                        <h5>Napiš Marvinovi deprimující komentář:</h5>
+                        <form id="comment-form">
+                            <div class="form-group">
+                                <label for="author-input">Jméno / Přezdívka:</label>
+                                <input type="text" id="author-input" placeholder="Tvé jméno..." required>
+                            </div>
+                            <div class="form-group">
+                                <label for="text-input">Komentář:</label>
+                                <textarea id="text-input" rows="3" placeholder="Sem napiš něco zbytečného..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn-myspace btn-submit">Odeslat komentář</button>
+                        </form>
+                    </div>
+
+                    <!-- Comments List -->
+                    <div id="comments-list" class="comments-list">
+                        <!-- Loaded dynamically via script.js -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div id="myspace-footer">
+            <p>© 2005 MySpace.com. Všechna práva vyhrazena. Marvin nezodpovídá za vaši ztrátu naděje.</p>
+            <p><small>Powered by Sirius Cybernetics Corp GPP System | CSS & HTML Retro Style 2005</small></p>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
