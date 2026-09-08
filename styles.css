@@ -1,0 +1,583 @@
+/* ==========================================================================
+   2005 RETRO MYSPACE CSS :: MARVIN THE PARANOID ANDROID PROFILE
+   ========================================================================== */
+
+/* Reset & Global Base Settings */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #05050a;
+    background-image:
+        radial-gradient(rgba(0, 255, 170, 0.08) 1px, transparent 0),
+        linear-gradient(to bottom, #030306 0%, #0c0a14 100%);
+    background-size: 20px 20px, 100% 100%;
+    color: #b0c0d0;
+    font-family: "Courier New", Courier, Verdana, Tahoma, sans-serif;
+    font-size: 12px;
+    line-height: 1.4;
+    padding-bottom: 50px;
+}
+
+/* Links */
+a {
+    color: #00ffaa;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #ff007f;
+    background-color: #112233;
+    text-decoration: none;
+}
+
+/* Retro Top Navbar */
+#myspace-navbar {
+    background: linear-gradient(180deg, #1f2738 0%, #0b1018 100%);
+    border-bottom: 2px solid #00ffaa;
+    padding: 6px 0;
+    font-size: 11px;
+    font-family: Tahoma, Arial, sans-serif;
+    color: #ffffff;
+}
+
+.nav-container {
+    width: 850px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.myspace-logo {
+    font-weight: bold;
+    font-size: 14px;
+    color: #00ffaa;
+    text-transform: lowercase;
+    letter-spacing: -1px;
+}
+
+.tagline {
+    font-style: italic;
+    color: #88aacc;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0 4px;
+}
+
+.nav-links a:hover {
+    color: #00ffaa;
+    background: transparent;
+}
+
+/* Main Container - Fixed Desktop Width (2005 style) */
+#main-wrapper {
+    width: 850px;
+    margin: 15px auto 0 auto;
+    background-color: rgba(10, 12, 20, 0.92);
+    border: 2px solid #223344;
+    box-shadow: 0 0 20px rgba(0, 255, 170, 0.15), inset 0 0 10px rgba(0, 0, 0, 0.8);
+    padding: 15px;
+}
+
+/* Marquee Ticker Box */
+.marquee-box {
+    background-color: #000000;
+    border: 1px dashed #00ffaa;
+    color: #00ffaa;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    padding: 4px;
+    margin-bottom: 15px;
+}
+
+/* Header Profile Banner */
+.header-banner {
+    background: linear-gradient(135deg, #120024 0%, #001f2d 100%);
+    border: 1px solid #334466;
+    padding: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.header-banner h1 {
+    color: #00ffaa;
+    font-size: 20px;
+    text-shadow: 0 0 8px rgba(0, 255, 170, 0.6);
+    margin-bottom: 5px;
+    font-family: Arial, "Courier New", sans-serif;
+}
+
+.header-banner .subtext {
+    color: #aa99cc;
+    font-style: italic;
+    font-size: 11px;
+}
+
+/* Layout Grid (2 Columns) */
+.profile-grid {
+    display: flex;
+    gap: 15px;
+}
+
+.left-col {
+    width: 330px;
+    flex-shrink: 0;
+}
+
+.right-col {
+    flex-grow: 1;
+    width: 475px;
+}
+
+/* Common Card Box Styling */
+.card {
+    background-color: #0d111a;
+    border: 1px solid #223344;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.card-title {
+    background: linear-gradient(90deg, #1c2d42 0%, #0c1826 100%);
+    border-bottom: 1px solid #00ffaa;
+    color: #00ffaa;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 4px 8px;
+    margin: -10px -10px 10px -10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Left Column - Profile Box */
+.username {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #334455;
+    padding-bottom: 4px;
+}
+
+.avatar-container {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.avatar-frame {
+    display: inline-block;
+    border: 3px double #00ffaa;
+    padding: 2px;
+    background-color: #000;
+}
+
+.avatar-img {
+    width: 200px;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    filter: contrast(110%) brightness(90%);
+}
+
+.online-now {
+    display: block;
+    margin-top: 6px;
+    color: #ff007f;
+    font-weight: bold;
+    font-size: 12px;
+    animation: blink 1.2s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.2; }
+}
+
+.profile-status {
+    background-color: #150022;
+    border: 1px solid #441155;
+    color: #eeaaee;
+    padding: 6px;
+    font-style: italic;
+    margin-bottom: 10px;
+    font-size: 11px;
+}
+
+.details-list {
+    list-style: none;
+}
+
+.details-list li {
+    padding: 3px 0;
+    border-bottom: 1px dashed #1a2636;
+}
+
+.details-list strong {
+    color: #88aacc;
+}
+
+/* Contact Box */
+.contact-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+}
+
+.btn-myspace {
+    background: linear-gradient(180deg, #2a3c54 0%, #121c2b 100%);
+    border: 1px solid #446688;
+    color: #ffffff;
+    padding: 6px 4px;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.1s;
+}
+
+.btn-myspace:hover {
+    background: linear-gradient(180deg, #00ffaa 0%, #008855 100%);
+    color: #000000;
+    border-color: #00ffaa;
+    box-shadow: 0 0 6px #00ffaa;
+}
+
+.btn-myspace .icon {
+    margin-right: 2px;
+}
+
+/* URL Box */
+.url-input {
+    width: 100%;
+    margin-top: 4px;
+    background-color: #000;
+    border: 1px solid #334455;
+    color: #00ffaa;
+    font-family: monospace;
+    font-size: 10px;
+    padding: 4px;
+}
+
+/* Interests Table */
+.interests-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.interests-table td {
+    padding: 5px;
+    vertical-align: top;
+    border-bottom: 1px solid #1a2636;
+}
+
+.interests-table td.label {
+    width: 30%;
+    background-color: #121926;
+    color: #00ffaa;
+    font-weight: bold;
+}
+
+.highlight-42 {
+    color: #ff007f;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Right Column - Extended Network */
+.extended-network {
+    background: linear-gradient(90deg, #200d2b 0%, #0d1e2b 100%);
+    border: 1px solid #552277;
+    text-align: center;
+    padding: 8px;
+}
+
+.extended-network h3 {
+    color: #ff88cc;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* Music Player Widget */
+.music-player-card {
+    background: #000;
+    border: 2px solid #00ffaa;
+}
+
+.player-body {
+    padding: 8px;
+    background: linear-gradient(180deg, #081018 0%, #020406 100%);
+}
+
+.player-display {
+    background: #001108;
+    border: 1px solid #005533;
+    padding: 8px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#song-title {
+    color: #00ffaa;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.spectrum-analyser {
+    display: flex;
+    gap: 2px;
+    align-items: flex-end;
+    height: 16px;
+}
+
+.spectrum-analyser .bar {
+    width: 4px;
+    background-color: #00ffaa;
+    height: 4px;
+}
+
+.music-playing .b1 { animation: pulseBar 0.4s infinite alternate; }
+.music-playing .b2 { animation: pulseBar 0.6s infinite alternate; }
+.music-playing .b3 { animation: pulseBar 0.3s infinite alternate; }
+.music-playing .b4 { animation: pulseBar 0.5s infinite alternate; }
+.music-playing .b5 { animation: pulseBar 0.7s infinite alternate; }
+
+@keyframes pulseBar {
+    0% { height: 3px; background-color: #00aa66; }
+    100% { height: 16px; background-color: #ff007f; }
+}
+
+.player-controls {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    margin-bottom: 6px;
+}
+
+.player-btn {
+    background: linear-gradient(180deg, #334455 0%, #111a24 100%);
+    border: 1px solid #556677;
+    color: #00ffaa;
+    padding: 4px 10px;
+    font-family: monospace;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.player-btn:hover {
+    background: #00ffaa;
+    color: #000;
+}
+
+.player-status-text {
+    text-align: center;
+    color: #778899;
+}
+
+/* Blurb Section */
+.blurb-card h4 {
+    color: #ff007f;
+    margin: 10px 0 4px 0;
+    font-size: 12px;
+    border-bottom: 1px dashed #442244;
+}
+
+.blurb-card p {
+    margin-bottom: 8px;
+    color: #b8c8d8;
+}
+
+/* Blog Section */
+.blog-entry {
+    background-color: #080d14;
+    border: 1px solid #1a2838;
+    padding: 8px;
+    margin-bottom: 8px;
+}
+
+.blog-date {
+    color: #667788;
+    font-size: 10px;
+}
+
+.blog-heading {
+    color: #00ffaa;
+    font-weight: bold;
+    font-size: 12px;
+    margin: 2px 0;
+}
+
+.blog-content {
+    color: #a0b0c0;
+}
+
+/* Top 8 Friends Section */
+.friends-subtitle {
+    font-size: 11px;
+    color: #8899aa;
+    margin-bottom: 10px;
+}
+
+.top8-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    text-align: center;
+}
+
+.friend-item {
+    background-color: #090e17;
+    border: 1px solid #1f2e40;
+    padding: 6px;
+}
+
+.friend-name {
+    display: block;
+    color: #00ffaa;
+    font-weight: bold;
+    font-size: 10px;
+    margin-bottom: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.friend-avatar img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 1px solid #334455;
+    display: block;
+    margin: 0 auto;
+}
+
+.friend-avatar img:hover {
+    border-color: #ff007f;
+    transform: scale(1.05);
+    transition: transform 0.2s;
+}
+
+/* Comments Section */
+.comment-form-container {
+    background-color: #0a111a;
+    border: 1px dashed #00ffaa;
+    padding: 8px;
+    margin-bottom: 12px;
+}
+
+.comment-form-container h5 {
+    color: #00ffaa;
+    margin-bottom: 6px;
+}
+
+.form-group {
+    margin-bottom: 6px;
+}
+
+.form-group label {
+    display: block;
+    color: #88aacc;
+    font-size: 10px;
+    margin-bottom: 2px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    background-color: #000000;
+    border: 1px solid #223344;
+    color: #00ffaa;
+    font-family: "Courier New", monospace;
+    font-size: 11px;
+    padding: 4px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #00ffaa;
+    box-shadow: 0 0 5px rgba(0, 255, 170, 0.4);
+}
+
+.btn-submit {
+    width: 100%;
+    margin-top: 4px;
+}
+
+/* Comments List */
+.comments-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.comment-card {
+    background-color: #080d14;
+    border: 1px solid #1a2838;
+    padding: 8px;
+    display: flex;
+    gap: 10px;
+}
+
+.comment-left {
+    width: 80px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.comment-author {
+    color: #00ffaa;
+    font-weight: bold;
+    font-size: 10px;
+    display: block;
+    word-break: break-word;
+}
+
+.comment-avatar {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #334455;
+    margin: 4px auto;
+    display: block;
+}
+
+.comment-right {
+    flex-grow: 1;
+}
+
+.comment-date {
+    color: #556677;
+    font-size: 10px;
+    margin-bottom: 4px;
+    border-bottom: 1px dashed #1f2e40;
+    padding-bottom: 2px;
+}
+
+.comment-text {
+    color: #c0d0e0;
+    font-size: 11px;
+    word-break: break-word;
+}
+
+/* Footer */
+#myspace-footer {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px dashed #223344;
+    color: #556677;
+    font-size: 10px;
+}
+
+#myspace-footer small {
+    color: #334455;
+}
